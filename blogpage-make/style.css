@@ -1,0 +1,281 @@
+body{
+    margin: 0;
+    background-size: cover;
+}
+
+p{
+    color: black;
+}
+
+ul{
+    list-style:none; 
+    padding-left: 10px;
+}
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    margin-right: 20px;
+    right: 0;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 12px;
+    background-color: rgba(238, 229, 223, 0.2);
+}
+
+input[type="submit"] {
+    padding: 7px 12px;
+    font-size: 13px;
+    background-color:rgba(238,118,33,0.7); 
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login{
+    margin: 0;
+    padding: 0;
+    background-image: url('/7J9A1599.jpg');
+}
+.blog{
+    margin: 0;
+    padding: 0;
+    background-image: url('/7J9A1581.jpg'); 
+    /* 背景图自动适配网页大小 */
+    background-size: cover;
+    background-repeat: repeat;
+  background-position: center;
+  
+}
+
+.login-header{
+    height: 80px;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;/*要素を横並びにする*/
+    justify-content: space-between;/*両端に揃える*/
+    align-items: center;/*在侧轴上居中对齐-垂直に揃える*/
+    /*background-color:rgba(245, 222, 179,0.3);*/
+
+    background: linear-gradient(to bottom, rgb(245, 235, 217), rgba(245, 222, 179,0)); /* 从不透明到透明的垂直渐变 */
+    background-clip: text; /* 作用于浏览器，将背景剪切到文本 */
+    color: transparent; /* 让文本透明 */
+    display: inline-block; /* 使背景仅应用于文本内容 */
+}
+.list-header{
+    height: 50px;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;/*要素を横並びにする*/
+    right: 0;
+    justify-content: space-between; /* 将子元素分散对齐，位于容器两端 */
+}
+
+.welcome{
+    color: rgba(243, 227, 217, 0.7);/* 设置文字颜色 */
+}
+
+.title,.user-login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 50px; /* 设置字体大小 */
+   font-weight: lighter;
+   width: 100%;/* 设置div宽度 */
+    height: 100px; /* 设置div高度 */
+    color: rgba(238,118,33,0.8);/* 设置文字颜色 */
+}
+
+.user-login-form{
+    width: 100%;
+    height: 300px;
+    /*background-color:rgba(255, 248, 220,0.2); */
+    margin-left: auto;
+    margin-right: auto;
+
+    background: linear-gradient(to bottom, rgba(245, 222, 179,0), rgba(245,235,217,0.3)); /* 从透明到不透明的垂直渐变 */
+    background-clip: text; /* 作用于浏览器，将背景剪切到文本 */
+    color: transparent; /* 让文本透明 */
+    display: inline-block; /* 使背景仅应用于文本内容 */
+}
+
+.form-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.user-login-btn{
+    background-color:rgba(238,118,33,0.5);
+    color: rgba(255, 248, 220,0.8);
+    width: 100px;
+    height: 60px;
+    border-radius: 50px;
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+.link ul li a {
+    color: rgba(238,118,33,0.9); /* 设置链接文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+  }
+.menu ul li a {
+color: rgba(238,118,33,0.9); /* 设置链接文字颜色 */
+text-decoration: none; /* 去除下划线 */
+}
+.introduce ul li a {
+    color: rgba(238,118,33,0.9); /* 设置链接文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+ul li a:hover{
+    color:rgb(240, 167, 9);
+}
+
+.link{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+.menu{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* 将子元素分散对齐，位于容器两端 */
+    align-items: center; /* 在交叉轴上居中对齐 */
+    font-weight: bolder;
+    color: rgba(238,118,33,0.9);
+}
+
+.menu-title-l{
+    margin-left: 30px;
+    font-size: 25px;
+}
+.menu-title-r{
+    font:28px;
+    font-weight: bold;
+    display: flex;
+    margin-right: 10px;
+}
+
+.login-main{
+    display: flex;
+    justify-content: center; /*在主轴上居中对齐*/
+    align-items: center; 
+}
+
+.login-middle{
+    width: 100%;/* 设置div宽度 */
+}
+
+.list-main{
+    display: flex;
+    justify-content: center; /*在主轴上居中对齐*/
+    align-items: center; 
+}
+.list-middle{
+    width: 100%;/* 设置div宽度 */
+    display: flex;
+    justify-content: space-between; /* 将子元素分散对齐，位于容器两端 */
+    align-items: center; /* 在交叉轴上居中对齐 */
+}
+
+.list-left{
+    width: 60%;
+    height:500px;
+    float: left;
+    overflow: hidden;/*设置元素的溢出内容的处理方式为隐藏*/
+    margin-left: 20px;
+    background-color:rgba(94, 56, 30, 0.2);
+    
+}
+.homepage-top{
+    height:30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:rgba(221, 181, 153, 0.2);
+    color: rgba(238,118,33,0.9);
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.homepage-mid{
+    height:420px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    background-color:rgba(221, 181, 153, 0.2);
+}
+.article-title{
+    width: 400px;
+    height: 20px;
+}
+.article-textarea{
+    width: 85%;
+    height: 230px;
+    padding-right: 10px;
+    background: rgba(238, 229, 223, 0.2);
+}
+#image {
+    color: rgba(15, 9, 4, 0.7);
+}
+
+.homepage-box{
+    height:220px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; /* 将子元素分散对齐，位于容器两端 */
+    align-items: center; /* 在交叉轴上居中对齐 */
+}
+.homepage-image{
+    max-width: 30%; /* 图片的最大宽度为父元素宽度的百分之百 */
+    max-height: auto; /* 图片的最大高度自动调整，以保持宽高比 */
+    margin-top: 30px;
+    opacity: 0.5; /* 透明度为70% */
+}
+.homepage-article{
+    width: 70%;
+    height:100%;
+    margin-left: 10px;
+    color:rgba(15, 9, 4, 0.7);
+}
+.homepage-article-b{
+    width: 70%;
+    height:100%;
+    margin-left: 10px;
+    color:rgba(15, 9, 4, 0.7);
+}
+.list-right{
+    width: 20%;
+    height: 500px;
+    float: right;
+    overflow: hidden;
+    text-align: left;
+    background-color:rgba(221, 181, 153, 0.2);
+}
+.search{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 0px;
+    background-color:rgba(94, 56, 30, 0.1);
+    color:rgba(238,118,33,0.9); 
+    font-weight: bold;
+}
+.introduce{
+    height:390px;
+    margin: 10px 10px 10px 10px ;
+    padding-top: 1px;
+    font-weight: bold;
+    background-color:rgba(94, 56, 30, 0.1);
+}

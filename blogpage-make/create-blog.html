@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="blog">
+    <header class="list-header">
+        <div class="menu">
+            <div class="menu-title-l">天気がいいから、散歩しましょうか</div>
+            <ul class="menu-title-r">
+                <li>メールアドレス表示&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="">ログアウト&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="">お問合せ</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="list-main">
+        <div class="list-middle">
+            <div class="list-left">
+                <div class="homepage-top">&nbsp;&nbsp;新規記事</div><!--title-->
+                <div class="homepage-mid">
+                    <form action="/submit_post" method="post" enctype="multipart/form-data">
+                        <!-- タイトル -->
+                        <label for="title">タイトル:</label>
+                        <input  type="text" class="article-title" id="title" name="title" placeholder="タイトルを入力してください" required>
+                        <br/>
+                        <br/>
+                        <!-- 画像 -->
+                        <label for="image" >画像:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="file" id="image" name="image" accept="image/*">
+                        <br/>
+                        <br/>
+                        <!-- 記事本文 -->
+                        <label for="content">記事:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <textarea class="article-textarea" id="content" name="content" rows="8"  required>こちらに記事を入力してください</textarea>
+                        <br/>
+                        <br/>
+                        <!-- 提出ボタン -->
+                        <div class="article-submit">
+                        <input  type="submit" value="投稿する">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="list-right">
+                <div class="search">
+                    <form action="/search" method="get">
+                        <label for="search">&nbsp;&nbsp;Search:</label><br />
+                        &nbsp;&nbsp;<input type="text" id="search" name="search" placeholder="キーワードを入力してください">
+                        <input type="submit" value="捜索">
+                    </form>
+                </div>
+                <div class="introduce">
+                    <ul>
+                        <li><a href="list-of-blogs.html">記事一覧</a></li>
+                        <li><a href="edit-blog.html">記事編集</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <small>Copyright &copy; Jun All rights reserved</small>
+    </footer>
+</body>
+
+</html>
