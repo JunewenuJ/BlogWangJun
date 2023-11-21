@@ -4,35 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>registry</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;700&family=Dela+Gothic+One&family=Gluten:wght@200;300&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body class="login">
+    <header class="login-header">
         <h1 class="welcome">Welcome to Jun's Blog</h1>
     </header>
-    <main>
-        <div class="login-box">
+    <main class="login-main">
+        <div class="login-middle">
             <div class="title">おかえり</div>
-
             <div class="user-login-form">
-                <form action="" method="post">
+                <form action="register/process" method="post">
                     <div class="form-row">
                         <button class="user-login-btn">登録</button>
                     </div>
-
                     <div class="form-row">
-                        <input type="text" id="username" name="username" placeholder="ユーザ名を書いて下さい" required>
+                        <input type="text" id="username" name="username"  required>
                     </div>
                     <div class="form-row">
-                        <input type="text" id="mail" name="mail" placeholder="メールアドレスを書いて下さい" required>
+                        <input type="text" id="email" name="email" required>
                     </div>
                     <div class="form-row">
-                        <input type="password" id="password" name="password" placeholder="パスワードを書いて下さい" required>
+                        <input type="password" id="password" name="password"  required>
                     </div>
                     <div>
                         <p>※パスワードを忘れた方は<a href="">こちら</a></p>
@@ -44,9 +42,9 @@
             </div>
 
             <div class="link">
-                <ul>
-                    <li><a href="">ホーム記事</a></li>
-                    <li><a href="">新規登録</a></li>
+                <ul class="link-title-r">
+                    <li><a href="">ホーム記事&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="">新規登録&nbsp;&nbsp;&nbsp;</a></li>
                     <li><a href="">お問合せ</a></li>
                 </ul>
             </div>
@@ -58,3 +56,6 @@
 </body>
 
 </html>
+
+
+
